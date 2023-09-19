@@ -1,0 +1,83 @@
+:root {
+  --darkblue: #061130;
+  --lightblue: #1C4BC4;
+  --light1: #F4F6F8;
+  --light2: #FAFD61;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--darkblue);
+  color: var(--light1);
+}
+
+footer {
+  background-color: var(--light1);
+  color: var(--darkblue);
+  text-align: center;
+  padding: 30px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav > p {
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+.chat {
+  background-color: var(--lightblue);
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin: 0 0 0 10px;
+}
+
+.hero {
+  display: flex;
+  background-color: var(--darkblue);
+  color: var(--light1);
+  justify-content: center;
+}
+
+.text {
+  margin: 20px 0px 100px 140px;
+  padding: 20px;
+}
+
+.world-image {
+  margin: 20px 140px 100px 0px;
+  padding: 20px;
+}
+
+.services {
+  color: var(--light2);
+}
+
+.links {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.inspiration {
+  margin-bottom: 0;
+}
