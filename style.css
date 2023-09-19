@@ -8,13 +8,13 @@
 body {
   margin: 0;
   font-family: "Helvetica", sans-serif;
+  background-color: var(--darkblue);
 }
 
 header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: var(--darkblue);
   color: var(--light1);
 }
 
@@ -52,7 +52,6 @@ h2 {
 
 .hero {
   display: flex;
-  background-color: var(--darkblue);
   color: var(--light1);
   justify-content: center;
 }
@@ -62,7 +61,7 @@ h2 {
   padding: 20px;
 }
 
-.world-image {
+.world-image-container {
   margin: 20px 140px 100px 0px;
   padding: 20px;
 }
@@ -80,4 +79,64 @@ h2 {
 
 .inspiration {
   margin-bottom: 0;
+}
+
+@media (max-width: 1150px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .text {
+    margin: 20px;
+    padding: 30px;
+  }
+  
+  .world-image-container {
+    margin: 20px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .text {
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .world-image-container {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .world-image {
+    width: 400px;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    justify-content: center;
+  }
+
+  .hero {
+    display: block;
+  }
+
+  .text {
+    margin: 0px;
+    padding: 20px;
+  }
+  
+  .world-image-container {
+    margin: 0px;
+    padding: 20px;
+  }
+  
+  .world-image {
+    max-width: 100%;
+  }
+
+  .links {
+    display: block;
+  }
 }
